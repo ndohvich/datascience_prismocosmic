@@ -2,6 +2,35 @@
 
 # Project 2: 
 
+## Project Description
+
+This project implements a recommender system using collaborative filtering techniques. The goal is to provide personalized recommendations based on user preferences and historical data.
+
+## Objectives
+
+- Analyze user-item interaction data.
+- Implement collaborative filtering algorithms to generate recommendations.
+- Evaluate the performance of the recommender system using metrics such as precision and recall.
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Surprise (for building recommender systems)
+- Jupyter Notebook
+
+## Installation 
+
+To run this project, you need to have Python installed on your machine. You can install the necessary dependencies using pip:
+
+pip install pandas numpy scikit-learn scikit-surprise
+
+## Perspectives 
+
+Future work could involve enhancing the model by incorporating additional data sources, such as user demographics or item metadata, to improve the quality of recommendations. Additionally, exploring deep learning techniques for recommendation systems could yield better results.
+
 # Project 3: Stock Price Prediction
 
 ## Project Description
