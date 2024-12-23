@@ -1,6 +1,6 @@
 # Project 1: 
 
-# Project 2: 
+# Project 2: Recommender System
 
 ## Project Description
 
