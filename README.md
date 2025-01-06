@@ -1,4 +1,19 @@
-# Project 1: 
+# Project 1: ChatBot
+
+## Project Description
+
+Build a basic chatbot using natural language processing (NLP) techniques in Python. You can use libraries such as NLTK or spaCy
+
+## Objectives 
+
+- Build a chatbot
+
+## Technologies Used 
+
+- python
+- ntlk
+- spacy
+- transformers
 
 # Project 2: Recommender System
 
