@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <div id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Type your message here...">
+        <button id="send-button">Send</button>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#send-button').click(function() {
+                var userInput = $('#user-input').val();
+                $.ajax({
+                    url: '/get_response',
+                    method: 'POST',
+                    data: { message: userInput },
+                    success: function(response) {
+                        console.log(`response : ${JSON.stringify(response)}`)
+                        $('#chat-box').append('<div class="user-message">' + userInput + '</div>');
+                        $('#chat-box').append('<div class="bot-response">' + response.response + '</div>');
+                        $('#user-input').val('');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

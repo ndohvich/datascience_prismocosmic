@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-Black.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+
+.chat-container {
+    width: 400px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chat-box {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.user-message {
+    text-align: right;
+    margin: 10px 0;
+    color: black;
+}
+
+.bot-response {
+    text-align: left;
+    margin: 10px 0;
+    color: deepskyblue;
+}
+
+#user-input {
+    width: calc(100% - 70px);
+    padding: 5px;
+}
+
+#send-button {
+    width: 60px;
+    padding: 5px;
+}
